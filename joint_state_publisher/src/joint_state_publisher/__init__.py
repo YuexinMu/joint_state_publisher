@@ -285,7 +285,7 @@ class JointStatePublisher():
                 pass
 
     def update(self, delta):
-        for name, joint in self.free_joints.iteritems():
+        for name, joint in self.free_joints.items():
             forward = joint.get('forward', True)
             if forward:
                 joint['position'] += delta
